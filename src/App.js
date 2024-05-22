@@ -13,7 +13,7 @@ function App() {
     if (numAllowed) str += "1234567890";
     if (charAllowed) str += "!@#$%^&*()_+-=[]{}|;:<>?";
 
-    for (let i = 0; i <= passLength; i++) {
+    for (let i = 0; i < passLength; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(char);
     }
